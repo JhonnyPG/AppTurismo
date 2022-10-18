@@ -6,53 +6,93 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".welcomActivity"
-    android:orientation="vertical">>
-
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:background="#313280"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/tex_our"
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/tex_Destinations"
+                android:textColor="@color/white"
+                android:textSize="35dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:orientation="vertical"
+        android:layout_margin="16dp"
         android:gravity="center">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/tex_Destinations"
-            android:textColor="@color/purple_500"
-            android:textSize="48dp"/>
-
 
         <Button
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:backgroundTint="#2D2D82"
+            android:text="@string/tex_bog"
             android:textSize="30dp"
-            app:cornerRadius="10dp"
-            android:layout_marginTop="58dp"
-            android:text="@string/tex_bog" />
+            app:cornerRadius="10dp" />
+
         <Button
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            app:cornerRadius="10dp"
-            android:layout_marginTop="58dp"
+            android:layout_marginTop="45dp"
+            android:backgroundTint="#6974A1"
             android:text="@string/tex_med"
-            android:background="@color/purple_700" />
+            android:textSize="30dp"
+            app:cornerRadius="10dp" />
+
         <Button
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:backgroundTint="#2D2D82"
+            android:text="@string/tex_cart"
             android:textSize="30dp"
-            app:cornerRadius="10dp"
-            android:layout_marginTop="58dp"
-            android:text="@string/tex_cart" />
+            app:cornerRadius="10dp" />
+
         <Button
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:backgroundTint="#6974A1"
+            android:text="@string/tex_cali"
             android:textSize="30dp"
-            app:cornerRadius="10dp"
-            android:layout_marginTop="58dp"
-            android:text="@string/tex_cali" />
+            app:cornerRadius="10dp" />
     </LinearLayout>
 
 </LinearLayout>

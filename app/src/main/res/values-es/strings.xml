@@ -1,13 +1,14 @@
 <resources>
     <string name="app_name">Aventura Por Colombia</string>
     <string name="tex_Sig">REGISTRO</string>
-    <string name="tex_Con">continuar</string>
+    <string name="tex_Con">Continuar</string>
     <string name="tex_Username">Nombre usuario</string>
     <string name="tex_Email">Correo electronico</string>
-    <string name="tex_Password">contraseña</string>
+    <string name="tex_Password">Contraseña</string>
     <string name="tex_YouPassword">*******</string>
     <string name="tex_Login">INGRESAR</string>
     <string name="tex_Destinations">Destinos</string>
+    <string name="tex_our">Nuestros</string>
     <string name="tex_bog">Bogotá</string>
     <string name="tex_med">Medellín</string>
     <string name="tex_cart">Cartagena</string>
