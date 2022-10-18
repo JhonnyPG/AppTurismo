@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcomActivity"
+    android:orientation="vertical">>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tex_Destinations"
+            android:textColor="@color/purple_500"
+            android:textSize="48dp"/>
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="58dp"
+            android:text="@string/tex_bog" />
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="58dp"
+            android:text="@string/tex_med"
+            android:background="@color/purple_700" />
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="58dp"
+            android:text="@string/tex_cart" />
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="58dp"
+            android:text="@string/tex_cali" />
+    </LinearLayout>
+
+</LinearLayout>
