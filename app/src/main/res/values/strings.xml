@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Adventure Through Colombia</string>
+    <string name="tex_Sig">SIGN UP</string>
+    <string name="tex_Con">continue</string>
+    <string name="tex_Username">Username</string>
+    <string name="tex_Email">email@domain.com</string>
+    <string name="tex_Password">Password</string>
+    <string name="tex_YouPassword">*******</string>
+    <string name="tex_Login">LOGIN</string>
+    <string name="tex_Destinations">Destinations</string>
+    <string name="tex_bog">Bogotá</string>
+    <string name="tex_med">Medellín</string>
+    <string name="tex_cart">Cartagena</string>
+    <string name="tex_cali">Cali</string>
+
+
+
 </resources>
