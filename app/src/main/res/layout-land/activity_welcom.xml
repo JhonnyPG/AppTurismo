@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".welcomActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="133dp"
+        android:layout_height="142dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/usuario" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/tex_Username"
+            android:textColor="@color/purple_500"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/style_stroke"
+            android:hint="@string/tex_Email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/tex_Password"
+            android:textColor="@color/purple_500"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_stroke"
+            android:hint="@string/tex_YouPassword"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:text="@string/tex_Login"
+            android:textSize="20dp"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+</LinearLayout>
