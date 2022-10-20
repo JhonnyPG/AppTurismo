@@ -39,9 +39,11 @@
             app:cornerRadius="10dp" />
 
         <Button
+            android:id="@+id/continuar"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:onClick="welcom"
             android:text="@string/tex_Con"
             android:textSize="15dp"
             app:cornerRadius="10dp" />
