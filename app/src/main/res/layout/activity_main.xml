@@ -11,9 +11,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="400dp"
         android:layout_margin="16dp"
-        android:background="#313280"
+        android:background="@drawable/style_main"
         android:gravity="center"
         android:orientation="vertical">
 

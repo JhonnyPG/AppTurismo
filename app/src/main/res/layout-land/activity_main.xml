@@ -12,7 +12,7 @@
         android:layout_width="350dp"
         android:layout_height="match_parent"
         android:layout_margin="16dp"
-        android:background="#313280"
+        android:background="@drawable/style_main"
         android:gravity="center"
         android:orientation="horizontal">
 
