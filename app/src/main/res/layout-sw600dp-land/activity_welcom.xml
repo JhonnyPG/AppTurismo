@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".welcomActivity">
+    tools:context=".welcomActivity"
+    android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/usuario"
+            android:layout_gravity="left"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:background="#313280"
+            android:layoutDirection="rtl"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+            app:logo="@drawable/logo"
+            app:navigationIcon="@drawable/ic_menu"
+
+            app:title="LOGIN"
+            app:titleMarginStart="250dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:titleTextColor="@color/white" />
+
+
+        <TextView
+            android:layout_width="235dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="@string/tex_Username"
+            android:textColor="@color/purple_500"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_stroke"
+            android:hint="@string/tex_Email"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/tex_Password"
+            android:textColor="@color/purple_500"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_stroke"
+            android:hint="@string/tex_YouPassword"
+            app:cornerRadius="15dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:elevation="15dp"
+            android:text="@string/tex_Login"
+            android:textSize="40dp"
+            app:cornerRadius="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
