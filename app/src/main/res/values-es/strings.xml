@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Aventura Por Colombia</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="Erroruser">Usuario o contraseña invalidos</string>
+    <string name="Errormenssage">Intentelo Nuevamente</string>
     <string name="tex_Sig">REGISTRO</string>
     <string name="tex_Con">Continuar</string>
     <string name="tex_Username">Nombre usuario</string>
@@ -13,4 +16,5 @@
     <string name="tex_med">Medellín</string>
     <string name="tex_cart">Cartagena</string>
     <string name="tex_cali">Cali</string>
+
 </resources>

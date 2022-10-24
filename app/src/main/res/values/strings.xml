@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Adventure Through Colombia</string>
+    <string name="welcome">Welcome</string>
+    <string name="Erroruser">Invalid username or password</string>
+    <string name="Errormenssage">Try Again</string>
     <string name="tex_Sig">SIGN UP</string>
     <string name="tex_Con">continue</string>
     <string name="tex_Username">Username</string>
@@ -13,6 +16,7 @@
     <string name="tex_med">Medellín</string>
     <string name="tex_cart">Cartagena</string>
     <string name="tex_cali">Cali</string>
+
 
 
 </resources>
