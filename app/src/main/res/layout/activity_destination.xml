@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".welcomActivity"
     android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_barradestinos"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_200"
+        android:elevation="8dp"
+        app:logo="@drawable/logo"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -98,5 +115,14 @@
             android:textSize="30dp"
             app:cornerRadius="10dp" />
     </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab4a"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="30dp"
+            android:backgroundTint="#F65050"
+            android:src="@android:drawable/ic_menu_search"
+            />
 
-</LinearLayout>
+</LinearLayout></androidx.coordinatorlayout.widget.CoordinatorLayout>

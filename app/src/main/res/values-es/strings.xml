@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Aventura Por Colombia</string>
+    <string name="toolbar1">Inicio de sesion</string>
     <string name="welcome">Bienvenido</string>
     <string name="Erroruser">Usuario o contraseña invalidos</string>
     <string name="Errormenssage">Intentelo Nuevamente</string>

@@ -4,6 +4,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
@@ -15,6 +16,9 @@ class welcomActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcom)
+        setSupportActionBar(findViewById(R.id.my_barrainiciosesion))
+
+
         edtusername = findViewById(R.id.edtusername)
         edtpassword = findViewById(R.id.edtpassword)
     }
@@ -46,5 +50,10 @@ class welcomActivity : AppCompatActivity() {
                      .show()
                 }
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_registro,menu)
+        return super.onCreateOptionsMenu(menu)
     }
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/departamento"
+        android:title="Departamentos"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/ciudades"
+        android:title="Ciudades"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/municipios"
+        android:title="Municipios"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/pueblos"
+        android:title="Pueblos"
+        app:showAsAction="never"/>
+
+</menu>

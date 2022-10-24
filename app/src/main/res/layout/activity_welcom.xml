@@ -8,6 +8,18 @@
     tools:context=".welcomActivity"
     android:orientation="vertical">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_barrainiciosesion"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_200"
+        android:elevation="8dp"
+        app:logo="@drawable/logo"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,7 +81,5 @@
             android:textSize="25dp"
             app:cornerRadius="10dp" />
     </LinearLayout>
-
-
 
 </LinearLayout>
