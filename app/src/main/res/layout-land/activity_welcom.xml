@@ -36,7 +36,8 @@
             android:layout_gravity="center|center_vertical"
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/style_stroke"
-            android:hint="@string/tex_Email" />
+            android:hint="@string/tex_Email"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -53,6 +54,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/style_stroke"
             android:hint="@string/tex_YouPassword"
+            android:inputType="textPassword"
             app:cornerRadius="10dp" />
 
         <Button

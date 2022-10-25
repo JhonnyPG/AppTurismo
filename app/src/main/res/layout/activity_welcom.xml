@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".welcomActivity"
@@ -42,6 +43,7 @@
             android:layout_marginTop="30dp"
             android:layout_gravity="left"/>
 
+
         <EditText
             android:id="@+id/edtusername"
             android:layout_width="300dp"
@@ -51,6 +53,8 @@
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/style_stroke"
             android:hint="@string/tex_Email" />
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,6 +72,7 @@
             android:layout_margin="15dp"
             android:background="@drawable/style_stroke"
             android:hint="@string/tex_YouPassword"
+            android:inputType="textPassword"
             app:cornerRadius="10dp" />
 
         <Button
