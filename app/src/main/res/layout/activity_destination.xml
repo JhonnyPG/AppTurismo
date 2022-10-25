@@ -125,4 +125,5 @@
             android:src="@android:drawable/ic_menu_search"
             />
 
-</LinearLayout></androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
