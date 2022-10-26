@@ -104,6 +104,15 @@
                 app:cornerRadius="10dp"
                 />
 
+            <TextView
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="inicia sesion con"
+                android:textColor="@color/purple_500"
+                android:textSize="20dp" />
+
         </LinearLayout>
 
     </LinearLayout>

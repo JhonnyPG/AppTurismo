@@ -37,6 +37,7 @@
             app:cornerRadius="10dp" />
 
         <Button
+            android:id="@+id/continuar"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="@string/tex_Con"

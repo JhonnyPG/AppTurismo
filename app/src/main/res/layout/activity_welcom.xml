@@ -92,7 +92,7 @@
             android:layout_gravity="left"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="30dp"
-            android:text="inicia sesio con"
+            android:text="inicia sesion con"
             android:textColor="@color/purple_500"
             android:textSize="15dp" />
 
