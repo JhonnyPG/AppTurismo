@@ -11,14 +11,18 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_barrainiciosesion"
         android:layout_width="match_parent"
-        android:layout_height="151dp"
+        android:layout_height="104dp"
         android:background="@color/purple_200"
-        android:elevation="8dp"
+        android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:logo="@drawable/logo"
         app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:title="@string/app_name"
-        app:titleTextColor="@color/white" />
+        app:titleMarginStart="1mm"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@color/white"
+
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,8 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="400dp"
+            android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:text="@string/tex_Username"
             android:textColor="@color/purple_500"
@@ -57,8 +60,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="400dp"
+            android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:text="@string/tex_Password"
             android:textColor="@color/purple_500"
@@ -82,8 +84,17 @@
             android:elevation="15dp"
             android:onClick="destino"
             android:text="@string/tex_Login"
-            android:textSize="25dp"
+            android:textSize="40dp"
             app:cornerRadius="10dp" />
+
+        <TextView
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="inicia sesion con"
+            android:textColor="@color/purple_500"
+            android:textSize="25dp" />
 
 
     </LinearLayout>
