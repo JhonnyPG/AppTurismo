@@ -7,7 +7,43 @@
     android:layout_height="match_parent"
     tools:context=".welcomActivity"
     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/style_main"
+        android:gravity="center"
+        android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="226dp"
+            android:layout_height="236dp"
+            android:src="@drawable/logo" />
 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tex_Sig"
+            android:textSize="20dp"
+            app:cornerRadius="10dp" />
+
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tex_Con"
+            android:textSize="20dp"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
 
 </LinearLayout>
+
+

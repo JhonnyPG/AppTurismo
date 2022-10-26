@@ -6,66 +6,107 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".welcomActivity"
-    android:orientation="vertical">>
+    android:orientation="vertical">
 
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_barrainiciosesion"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:background="@color/purple_200"
+        android:elevation="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:logo="@drawable/logo"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_height="226dp"
         android:gravity="center">
 
         <ImageView
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="200dp"
-            android:src="@drawable/usuario"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginHorizontal="500dp"
-            android:layout_marginTop="58dp"
-            android:text="@string/tex_Username"
-            android:textColor="@color/purple_500"
-            android:textSize="30dp" />
-
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="@string/tex_Email"
-            android:layout_marginHorizontal="16dp"
-            android:background="@drawable/style_stroke"
-            android:layout_gravity="center|center_vertical" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tex_Password"
-            android:textSize="30dp"
-            android:textColor="@color/purple_500"
-            android:layout_marginHorizontal="500dp"
-            android:layout_marginTop="50dp"
-            android:layout_gravity="left"
-            />
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@drawable/style_stroke"
-            android:hint="@string/tex_YouPassword"
-            app:cornerRadius="15dp"
-            />
-
-        <Button
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:elevation="15dp"
-            android:textSize="40dp"
-            app:cornerRadius="15dp"
-            android:layout_marginTop="58dp"
-            android:text="@string/tex_Login" />
+            android:layout_margin="80px"
+            android:gravity="center"
+            android:src="@drawable/usuario"></ImageView>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="510dp"
+            android:layout_margin="80px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="95dp"
+                android:text="@string/tex_Username"
+                android:textColor="@color/purple_500"
+                android:textSize="50dp" />
+
+            <EditText
+                android:id="@+id/edtusername"
+                android:layout_width="800dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginHorizontal="35dp"
+                android:background="@drawable/style_stroke"
+                android:hint="@string/tex_Email"
+                android:textSize="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/tex_Password"
+                android:textColor="@color/purple_500"
+                android:textSize="50dp" />
+
+            <EditText
+                android:id="@+id/edtpassword"
+                android:layout_width="800dp"
+                android:layout_height="72dp"
+                android:background="@drawable/style_stroke"
+                android:hint="@string/tex_YouPassword"
+                android:inputType="textPassword"
+                app:cornerRadius="30dp"
+                android:textSize="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="514dp"
+            android:layout_margin="80px"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_marginTop="58dp"
+                android:onClick="destino"
+                android:text="@string/tex_Login"
+                android:textSize="50dp"
+                app:cornerRadius="10dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>

@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AppCRUD" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AppCocina" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Grupo-1-Aplicaciones-M-viles" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PubliElectoral-Mobile-App" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-kotlin-login" vcs="Git" />
   </component>
 </project>
