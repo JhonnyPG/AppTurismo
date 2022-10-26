@@ -12,7 +12,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_barrainiciosesion"
         android:layout_width="match_parent"
-        android:layout_height="103dp"
+        android:layout_height="129dp"
         android:background="@color/purple_200"
         android:elevation="8dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
@@ -58,7 +58,7 @@
 
             <EditText
                 android:id="@+id/edtusername"
-                android:layout_width="800dp"
+                android:layout_width="600dp"
                 android:layout_height="84dp"
                 android:layout_gravity="center|center_vertical"
                 android:layout_marginHorizontal="35dp"
@@ -78,7 +78,7 @@
 
             <EditText
                 android:id="@+id/edtpassword"
-                android:layout_width="800dp"
+                android:layout_width="600dp"
                 android:layout_height="72dp"
                 android:background="@drawable/style_stroke"
                 android:hint="@string/tex_YouPassword"
