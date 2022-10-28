@@ -22,13 +22,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="88dp"
+        android:layout_height="104dp"
         android:gravity="center">
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="80px"
+            android:layout_margin="80dp"
             android:gravity="center"
             android:src="@drawable/usuario"></ImageView>
 
@@ -50,7 +50,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:layout_marginLeft="95dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
                 android:text="@string/tex_Username"
                 android:textColor="@color/purple_500"
                 android:textSize="20dp" />
@@ -68,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:layout_marginLeft="95dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:text="@string/tex_Password"
                 android:textColor="@color/purple_500"
@@ -87,21 +88,22 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_margin="80px"
             android:layout_height="match_parent"
+            android:layout_margin="80px"
+            android:layout_weight="1"
             android:orientation="vertical">
 
 
             <Button
-                android:layout_width="match_parent"
+                android:id="@+id/destino"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="58dp"
-                android:text="@string/tex_Login"
                 android:onClick="destino"
+                android:text="@string/tex_Login"
                 android:textSize="20dp"
-                app:cornerRadius="10dp"
-                />
+                app:cornerRadius="10dp" />
 
             <TextView
                 android:layout_width="167dp"
@@ -116,3 +118,4 @@
 
     </LinearLayout>
 </LinearLayout>
+
