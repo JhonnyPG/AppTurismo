@@ -2,11 +2,13 @@ package com.lemarin31.aventurateporcolombia
 
 import android.content.DialogInterface
 import android.content.Intent
+import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AlertDialogLayout
 
@@ -40,12 +42,15 @@ class welcomActivity : AppCompatActivity() {
                     .setPositiveButton("Ok", Mensajeok)
                     .create()
                     .show()
+                Toast.makeText(applicationContext,getResources().getString(R.string.welcome),
+                    Toast.LENGTH_LONG)
+                    .show()
             }
              else{
                  val botondialogo = AlertDialog.Builder(this)
                      .setTitle(resources.getString(R.string.Erroruser))
                      .setMessage(resources.getString(R.string.Errormenssage))
-                     .setNegativeButton("OK",Mensajecancel)
+                     .setNegativeButton(getResources().getString(R.string.Errormenssage),Mensajecancel)
                      .create()
                      .show()
                 }

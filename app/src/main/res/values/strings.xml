@@ -21,6 +21,8 @@
     <string name="tex_fullname">Full Name</string>
     <string name="tex_repeatpassword">Repeat Password</string>
     <string name="tex_yourname">Your Name</string>
+    <string name="tex_baselogin">Fail to build database connection </string>
+
 
 
 

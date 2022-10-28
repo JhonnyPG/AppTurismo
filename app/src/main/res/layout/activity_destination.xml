@@ -80,8 +80,9 @@
             android:layout_width="270dp"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
-            android:elevation="15dp"
             android:backgroundTint="#2D2D82"
+            android:elevation="15dp"
+            android:onClick="basedatos"
             android:text="@string/tex_bog"
             android:textSize="30dp"
             app:cornerRadius="10dp" />
@@ -90,8 +91,9 @@
             android:layout_width="270dp"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
-            android:elevation="15dp"
             android:backgroundTint="#6974A1"
+            android:elevation="15dp"
+            android:onClick="basedatos"
             android:text="@string/tex_med"
             android:textSize="30dp"
             app:cornerRadius="10dp" />
@@ -100,8 +102,9 @@
             android:layout_width="270dp"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
-            android:elevation="15dp"
             android:backgroundTint="#2D2D82"
+            android:elevation="15dp"
+            android:onClick="basedatos"
             android:text="@string/tex_cart"
             android:textSize="30dp"
             app:cornerRadius="10dp" />
@@ -110,14 +113,16 @@
             android:layout_width="270dp"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
-            android:elevation="15dp"
             android:backgroundTint="#6974A1"
+            android:elevation="15dp"
+            android:onClick="basedatos"
             android:text="@string/tex_cali"
             android:textSize="30dp"
             app:cornerRadius="10dp" />
     </LinearLayout>
 
 </LinearLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab4a"
         android:layout_width="90dp"
@@ -125,5 +130,6 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="30dp"
         android:backgroundTint="#F65050"
+        android:onClick="basedatos"
         android:src="@android:drawable/ic_menu_search" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

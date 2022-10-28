@@ -21,5 +21,7 @@
     <string name="tex_fullname">Nombre Completo</string>
     <string name="tex_repeatpassword">Repite la Contraseña</string>
     <string name="tex_yourname">Tu Nombre</string>
+    <string name="tex_baselogin">Falta contruir la conexion a base de datos </string>
+
 
 </resources>

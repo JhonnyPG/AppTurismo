@@ -6,12 +6,12 @@
 
     <item
         android:id="@+id/iniciosesion"
-        android:title="Iniciar Sesion"
+        android:title="Cerrar Sesion"
         app:showAsAction="never"/>
     <item
         android:id="@+id/registrarse"
         android:title="Registrarse"
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
 
 
 </menu>

@@ -147,6 +147,7 @@
         android:layout_marginHorizontal="130dp"
         android:gravity="center"
         android:hint="@string/tex_YouPassword"
+        android:onClick="basedatos"
         android:text="@string/tex_Sig"
         android:textSize="30dp"
         app:cornerRadius="50dp" />
