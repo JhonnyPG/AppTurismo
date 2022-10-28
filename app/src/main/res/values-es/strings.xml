@@ -7,6 +7,7 @@
     <string name="tex_Sig">REGISTRO</string>
     <string name="tex_Con">Continuar</string>
     <string name="tex_Username">Nombre usuario</string>
+    <string name="tex_mail">Correo Electronico</string>
     <string name="tex_Email">Correo electronico</string>
     <string name="tex_Password">Contraseña</string>
     <string name="tex_YouPassword">*******</string>
@@ -17,5 +18,8 @@
     <string name="tex_med">Medellín</string>
     <string name="tex_cart">Cartagena</string>
     <string name="tex_cali">Cali</string>
+    <string name="tex_fullname">Nombre Completo</string>
+    <string name="tex_repeatpassword">Repite la Contraseña</string>
+    <string name="tex_yourname">Tu Nombre</string>
 
 </resources>

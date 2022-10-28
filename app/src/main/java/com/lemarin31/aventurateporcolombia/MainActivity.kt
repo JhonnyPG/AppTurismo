@@ -14,7 +14,11 @@ class MainActivity : AppCompatActivity() {
     fun welcom(btncontinuar : View){
         val intent= Intent(this,welcomActivity::class.java).apply {  }
         startActivity(intent)
+    }
 
+    fun loginup(btnlogin :View){
+        val intent=Intent(this,LoginActivity::class.java).apply{ }
+        startActivity(intent)
     }
 
     }

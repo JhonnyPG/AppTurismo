@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/tex_Sig"
+        app:titleTextColor="@color/white"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tex_fullname"
+            android:textSize="40dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="18dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/style_stroke"
+            android:ems="10"
+            android:hint="@string/tex_yourname"
+            android:textSize="40dp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tex_Username"
+            android:textSize="40dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="18dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/style_stroke"
+            android:ems="10"
+            android:hint="@string/tex_Username"
+            android:textSize="40dp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tex_mail"
+            android:textSize="40dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="18dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/style_stroke"
+            android:ems="10"
+            android:hint="@string/tex_Email"
+            android:textSize="40dp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tex_Password"
+            android:textSize="40dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="18dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/style_stroke"
+            android:ems="10"
+            android:hint="@string/tex_YouPassword"
+            android:textSize="40dp"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tex_repeatpassword"
+            android:textSize="40dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="18dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/style_stroke"
+            android:ems="10"
+            android:hint="@string/tex_YouPassword"
+            android:textSize="40dp"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="140dp"
+        android:layout_marginHorizontal="230dp"
+        android:gravity="center"
+        android:hint="@string/tex_YouPassword"
+        android:text="@string/tex_Sig"
+        android:textSize="30dp"
+        app:cornerRadius="50dp" />
+
+</LinearLayout>
