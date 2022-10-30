@@ -8,9 +8,9 @@
     <string name="tex_Con">continue</string>
     <string name="tex_Username">Username</string>
     <string name="tex_mail">Email</string>
-    <string name="tex_Email"><font size="25">email@domain.com</font></string>
+    <string name="tex_Email">email@domain.com</string>
     <string name="tex_Password">Password</string>
-    <string name="tex_YouPassword"><font size="25">********</font></string>
+    <string name="tex_YouPassword">********</string>
     <string name="tex_Login">LOGIN</string>
     <string name="tex_Destinations">Destinations</string>
     <string name="tex_our">Our</string>

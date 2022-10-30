@@ -32,6 +32,7 @@
         <Button
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:onClick="loginup"
             android:text="@string/tex_Sig"
             android:textSize="20dp"
             app:cornerRadius="10dp" />
