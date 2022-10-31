@@ -22,7 +22,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="104dp"
+        android:layout_height="100dp"
         android:gravity="center">
 
         <ImageView
@@ -30,7 +30,9 @@
             android:layout_height="100dp"
             android:layout_margin="80dp"
             android:gravity="center"
-            android:src="@drawable/usuario"></ImageView>
+            android:src="@drawable/usuario">
+
+        </ImageView>
 
     </LinearLayout>
 
@@ -40,9 +42,8 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="209dp"
-            android:layout_margin="80px"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -75,14 +76,20 @@
                 android:textColor="@color/purple_500"
                 android:textSize="20dp" />
 
-            <EditText
-                android:id="@+id/edtpassword"
-                android:layout_width="300dp"
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/style_stroke"
-                android:hint="@string/tex_YouPassword"
-                android:inputType="textPassword"
-                app:cornerRadius="10dp" />
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtpassword"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:background="@drawable/style_stroke"
+                    android:hint="@string/tex_YouPassword"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
 
@@ -90,13 +97,13 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="80px"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:orientation="vertical">
 
 
             <Button
                 android:id="@+id/destino"
-                android:layout_width="220dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="58dp"

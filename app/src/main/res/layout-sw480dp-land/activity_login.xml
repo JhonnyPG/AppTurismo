@@ -129,15 +129,19 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="8dp"/>
 
-                <EditText
-                    android:id="@+id/editTextTextPassword"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:background="@drawable/style_stroke"
-                    android:ems="10"
-                    android:hint="@string/tex_YouPassword"
-                    android:inputType="textPassword" />
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/style_stroke"
+                        android:hint="@string/tex_YouPassword"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                     android:id="@+id/textView5"
@@ -150,16 +154,19 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="8dp"/>
 
-                <EditText
-                    android:id="@+id/editTextTextPassword2"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/style_stroke"
-                    android:ems="10"
-                    android:hint="@string/tex_YouPassword"
-                    android:inputType="textPassword" />
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/style_stroke"
+                        android:hint="@string/tex_YouPassword"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
 
 
             </LinearLayout>

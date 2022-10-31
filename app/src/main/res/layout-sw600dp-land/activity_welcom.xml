@@ -76,15 +76,20 @@
                 android:textColor="@color/purple_500"
                 android:textSize="25dp" />
 
-            <EditText
-                android:id="@+id/edtpassword"
-                android:layout_width="400dp"
-                android:layout_height="72dp"
-                android:background="@drawable/style_stroke"
-                android:hint="@string/tex_YouPassword"
-                android:inputType="textPassword"
-                android:textSize="25dp"
-                app:cornerRadius="30dp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtpassword"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:background="@drawable/style_stroke"
+                    android:hint="@string/tex_YouPassword"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
 
@@ -98,7 +103,7 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="58dp"
                 android:onClick="destino"
                 android:text="@string/tex_Login"

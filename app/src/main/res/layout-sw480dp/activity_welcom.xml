@@ -47,7 +47,7 @@
 
         <EditText
             android:id="@+id/edtusername"
-            android:layout_width="300dp"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center|center_vertical"
             android:layout_margin="15dp"
@@ -64,17 +64,23 @@
             android:textColor="@color/purple_500"
             android:layout_marginLeft="95dp"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
             android:layout_gravity="left" />
 
-        <EditText
-            android:id="@+id/edtpassword"
-            android:layout_width="300dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:background="@drawable/style_stroke"
-            android:hint="@string/tex_YouPassword"
-            android:inputType="textPassword"
-            app:cornerRadius="10dp" />
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtpassword"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:background="@drawable/style_stroke"
+                android:hint="@string/tex_YouPassword"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/destino"
