@@ -18,13 +18,25 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/tex_Sig"
         app:titleTextColor="@color/white"
-        tools:layout_editor_absoluteX="1dp" />
+        tools:layout_editor_absoluteX="1dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tex_Sig"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textFont="blond"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
         android:orientation="vertical">
 
 
@@ -142,15 +154,20 @@
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="70dp"
-        android:onClick="basedatos"
-        android:text="@string/tex_Sig"
-        android:textSize="20dp"
-        app:cornerRadius="50dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:onClick="basedatos"
+            android:text="@string/tex_Sig"
+            android:textSize="20dp"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
 
 </LinearLayout>

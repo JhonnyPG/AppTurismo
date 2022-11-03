@@ -24,9 +24,19 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintTop_toTopOf="parent"
-            app:title="@string/tex_Sig"
+
             app:titleTextColor="@color/white"
-            tools:layout_editor_absoluteX="1dp" />
+            tools:layout_editor_absoluteX="1dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/tex_Sig"
+                android:textColor="@color/white"
+                android:textSize="44dp"
+                android:textFont="blond"/>
+        </androidx.appcompat.widget.Toolbar>
 
 
 
