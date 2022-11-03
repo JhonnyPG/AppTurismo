@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "173613475055",
+    "project_id": "aventura-95f70",
+    "storage_bucket": "aventura-95f70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173613475055:android:557b94f922e70f37f2e71a",
+        "android_client_info": {
+          "package_name": "com.lemarin31.aventurateporcolombia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173613475055-pntv634tto41k7pck0lou453qipk37cl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOtQtCzO7GQ1r-YxOgURO0SfzSjnCSZrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173613475055-pntv634tto41k7pck0lou453qipk37cl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
