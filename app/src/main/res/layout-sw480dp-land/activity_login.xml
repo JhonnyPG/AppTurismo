@@ -75,7 +75,8 @@
                     android:background="@drawable/style_stroke"
                     android:ems="10"
                     android:hint="@string/tex_yourname"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -96,7 +97,8 @@
                     android:background="@drawable/style_stroke"
                     android:ems="10"
                     android:hint="@string/tex_Username"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
@@ -116,7 +118,8 @@
                     android:background="@drawable/style_stroke"
                     android:ems="10"
                     android:hint="@string/tex_Email"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
 
             </LinearLayout>
             <LinearLayout
