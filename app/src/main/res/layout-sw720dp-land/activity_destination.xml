@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".welcomActivity"
     android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_barrainiciosesion"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/purple_200"
+        android:elevation="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:logo="@drawable/logo"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"
