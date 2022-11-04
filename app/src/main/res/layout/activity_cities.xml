@@ -7,7 +7,38 @@
     android:layout_height="650dp"
     android:orientation="vertical"
     android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:background="@drawable/style_land"
+            android:orientation="vertical">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:text="@string/tex_our"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:text="@string/tex_Destinations"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"/>
+                </LinearLayout>
+        </LinearLayout>
 
         <Button
             android:id="@+id/buttonBog"
