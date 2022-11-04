@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_anchorGravity="center"
-        tools:context=".welcomActivity">
+        tools:context=".welcomActivity"
+        android:orientation="vertical">
+
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/my_barradestinos"
@@ -31,18 +29,8 @@
             android:id="@+id/cities"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-        
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/nav_view"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            android:layout_gravity="start"
-            app:headerLayout="@layout/nav_header"
-            app:menu="@menu/nav_menu"/>
-
-
     </LinearLayout>
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab4a"
@@ -51,7 +39,6 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="30dp"
         android:backgroundTint="#F65050"
-        android:contentDescription="@string/Errormenssage"
-        android:onClick="basedatos"
         android:src="@android:drawable/ic_menu_search" />
-</androidx.drawerlayout.widget.DrawerLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
