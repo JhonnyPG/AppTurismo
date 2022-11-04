@@ -12,30 +12,14 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_barrainiciosesion"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="60dp"
         android:background="@color/purple_200"
-        android:elevation="4dp"
+        android:elevation="8dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:logo="@drawable/logo"
         app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:titleTextColor="@color/white">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:src="@drawable/logo">
-        </ImageView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/app_name"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-
-
-    </androidx.appcompat.widget.Toolbar>
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"
