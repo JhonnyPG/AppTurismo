@@ -16,6 +16,7 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/my_barradestinos"
             android:layout_width="match_parent"
+            android:onClick="basedatos"
             android:layout_height="60dp"
             android:background="@color/purple_200"
             android:elevation="8dp"

@@ -35,6 +35,7 @@
         android:id="@+id/fab4a"
         android:layout_width="90dp"
         android:layout_height="wrap_content"
+        android:onClick="basedatos"
         android:layout_gravity="bottom|end"
         android:layout_margin="25dp"
         android:backgroundTint="#F65050"
