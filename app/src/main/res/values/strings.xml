@@ -22,6 +22,9 @@
     <string name="tex_repeatpassword">Repeat Password</string>
     <string name="tex_yourname">Your Name</string>
     <string name="tex_baselogin">Fail to build database connection </string>
+    <string name="tex_history">History</string>
+    <string name="tex_gastronomy">Gastronomy</string>
+    <string name="tex_parties">Parties</string>
 
 
 

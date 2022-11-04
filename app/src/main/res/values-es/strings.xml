@@ -22,6 +22,9 @@
     <string name="tex_repeatpassword">Repite la Contraseña</string>
     <string name="tex_yourname">Tu Nombre</string>
     <string name="tex_baselogin">Falta contruir la conexion a base de datos </string>
+    <string name="tex_history">Historia</string>
+    <string name="tex_gastronomy">Gastronomia</string>
+    <string name="tex_parties">Festividades</string>
 
 
 </resources>

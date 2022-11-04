@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="650dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+        <Button
+            android:id="@+id/buttonBog"
+            android:layout_width="270dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2D2D82"
+            android:elevation="15dp"
+            android:onClick="asignar"
+            android:text="@string/tex_bog"
+            android:textSize="30dp"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/buttonMed"
+            android:layout_width="270dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6974A1"
+            android:elevation="15dp"
+            android:onClick="basedatos"
+            android:text="@string/tex_med"
+            android:textSize="30dp"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/buttonCarta"
+            android:layout_width="270dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2D2D82"
+            android:elevation="15dp"
+            android:onClick="basedatos"
+            android:text="@string/tex_cart"
+            android:textSize="30dp"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/buttonCali"
+            android:layout_width="270dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6974A1"
+            android:elevation="15dp"
+            android:onClick="basedatos"
+            android:text="@string/tex_cali"
+            android:textSize="30dp"
+            app:cornerRadius="10dp" />
+
+</LinearLayout>

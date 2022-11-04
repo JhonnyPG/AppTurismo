@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcomActivity"
+    android:orientation="vertical"
+        android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/bogota600"
+        android:layout_margin="12dp">
+
+    </ImageView>
+        <Button
+            android:id="@+id/buttonHist"
+            android:layout_width="270dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2D2D82"
+            android:elevation="15dp"
+            android:onClick="asignar"
+            android:text="@string/tex_history"
+            android:textSize="30dp"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/buttonGastro"
+            android:layout_width="270dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6974A1"
+            android:elevation="15dp"
+            android:onClick="basedatos"
+            android:text="@string/tex_gastronomy"
+            android:textSize="30dp"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/buttonParti"
+            android:layout_width="270dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2D2D82"
+            android:elevation="15dp"
+            android:onClick="basedatos"
+            android:text="@string/tex_parties"
+            android:textSize="30dp"
+            app:cornerRadius="10dp" />
+
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
