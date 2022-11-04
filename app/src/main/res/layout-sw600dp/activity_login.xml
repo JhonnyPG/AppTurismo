@@ -27,8 +27,7 @@
             android:layout_gravity="center"
             android:text="@string/tex_Sig"
             android:textColor="@color/white"
-            android:textSize="38dp"
-            android:textFont="blond"/>
+            android:textSize="38dp" />
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
