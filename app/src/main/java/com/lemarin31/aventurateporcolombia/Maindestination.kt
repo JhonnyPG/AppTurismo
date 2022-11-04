@@ -19,8 +19,9 @@ class Maindestination : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
     fun basedatos(btnlogin : View){
-        Toast.makeText(applicationContext,getResources().getString(R.string.tex_baselogin),
-            Toast.LENGTH_LONG)
-            .show()
+        supportFragmentManager.beginTransaction()
+            .setReorderingAllowed(true)
+            .add(R.id.cities,citiesActivity::class.java,null,"cities")
+            .commit()
     }
 }

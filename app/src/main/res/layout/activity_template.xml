@@ -41,6 +41,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="30dp"
         android:backgroundTint="#F65050"
+        android:contentDescription="@string/Errormenssage"
         android:onClick="basedatos"
         android:src="@android:drawable/ic_menu_search" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
