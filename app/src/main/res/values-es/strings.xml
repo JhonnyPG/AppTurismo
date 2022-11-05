@@ -25,6 +25,8 @@
     <string name="tex_history">Historia</string>
     <string name="tex_gastronomy">Gastronomia</string>
     <string name="tex_parties">Festividades</string>
-
+    <string name="tex_cam">Camara</string>
+    <string name="tex_cont">Contactanos</string>
+    <string name="tex_help">Ayuda</string>
 
 </resources>
