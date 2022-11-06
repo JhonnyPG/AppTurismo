@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "173613475055-jp0vdfs2lpcd9u8ht4dt4ru1nhkt71o0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lemarin31.aventurateporcolombia",
+            "certificate_hash": "a869486ea29888f26531fcb9d6b98c3e3da5be81"
+          }
+        },
+        {
           "client_id": "173613475055-pntv634tto41k7pck0lou453qipk37cl.apps.googleusercontent.com",
           "client_type": 3
         }

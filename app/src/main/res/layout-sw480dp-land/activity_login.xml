@@ -190,7 +190,7 @@
             android:gravity="center_horizontal"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonlogin"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
                 android:onClick="basedatos"
