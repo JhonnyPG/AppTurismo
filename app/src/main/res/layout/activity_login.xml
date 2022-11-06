@@ -167,7 +167,7 @@
             android:id="@+id/buttonlogin"
             android:layout_width="200dp"
             android:layout_height="80dp"
-            android:onClick="basedatos"
+            android:onClick="guardar"
             android:text="@string/tex_Sig"
             android:textSize="20dp"
             app:cornerRadius="50dp" />
