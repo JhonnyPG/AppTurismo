@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AlertDialogLayout
+import com.google.firebase.auth.FirebaseAuth
 
 class welcomActivity : AppCompatActivity() {
     private var edtusername : EditText?=null
@@ -33,6 +34,7 @@ class welcomActivity : AppCompatActivity() {
 
 
     fun destino(btndestino : View){
+
             if (edtusername!!.text.toString()=="admin" && edtpassword!!.text.toString()=="12345") {
                 //val intent= Intent(this,Maindestination::class.java).apply {  }
                 //startActivity(intent)}
@@ -42,9 +44,9 @@ class welcomActivity : AppCompatActivity() {
                     .setPositiveButton("Ok", Mensajeok)
                     .create()
                     .show()
-                Toast.makeText(applicationContext,getResources().getString(R.string.welcome),
+                /*Toast.makeText(applicationContext,getResources().getString(R.string.welcome),
                     Toast.LENGTH_LONG)
-                    .show()
+                    .show()*/
             }
              else{
                  val botondialogo = AlertDialog.Builder(this)
@@ -56,6 +58,8 @@ class welcomActivity : AppCompatActivity() {
                 }
 
     }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_registro,menu)
