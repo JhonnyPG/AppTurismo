@@ -43,30 +43,23 @@ class LoginActivity : AppCompatActivity() {
     val logeo ={ dialog: DialogInterface, which:Int->
         val intent= Intent(this,Maindestination::class.java).apply {  }
         startActivity(intent)}
-    val Mensajecancel={_:DialogInterface,_:Int->}
 
-
-    /* fun guardar(btnguardar: View) {
-
-// -------------autenticacion ok--------------------------------------
-         FirebaseAuth.getInstance().createUserWithEmailAndPassword(
-            correo.text.toString(),contraseña.text.toString())
-//-----------------------------------------------------------------------
-
-// ---------- guardar en base de datos---- no ok ---------------------
-         FirebaseFirestore.getInstance().collection("Usuario").document(correo.text.toString())
-             .set(hashMapOf("correo" to correo.text.toString(), "contraseña" to contraseña.text.toString(),
-                     "Nombre" to nombre.text.toString(), "Usuario" to ususario.text.toString()))
-//-----------------------------------------------------------------------------
-
-         val dialog = AlertDialog.Builder(this)
-             .setTitle(resources.getString(R.string.welcome))
-             .setMessage(nombre!!.text.toString())
-             .setPositiveButton("Ok", logeo)
-             .create()
-             .show()
-
-     }*/
+    fun alert1 (){
+        val dialog = AlertDialog.Builder(this)
+            .setTitle(resources.getString(R.string.welcome))
+            .setMessage(nombre!!.text.toString())
+            .setPositiveButton("Ok", logeo)
+            .create()
+            .show()
+    }
+    fun alert2(){
+        val dialog = AlertDialog.Builder(this)
+            .setTitle(resources.getString(R.string.Erroruser))
+            .setMessage(null)
+            .setPositiveButton("Ok", null)
+            .create()
+            .show()
+    }
 
     fun guardar ( btnguardar : View){
         var mail = correo!!.text.toString();
@@ -77,20 +70,12 @@ class LoginActivity : AppCompatActivity() {
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(mail,password).addOnCompleteListener {
             if(it.isSuccessful){
                 FirebaseFirestore.getInstance().collection("usuario").document(mail).set(
-                    hashMapOf("nombre" to name, "Usuario" to user, "correo" to mail, "contraseña" to password)
-                )
-                val dialog = AlertDialog.Builder(this)
-                    .setTitle(resources.getString(R.string.welcome))
-                    .setMessage(name)
-                    .setPositiveButton("Ok", logeo)
-                    .create()
-                    .show()
+                    hashMapOf("nombre" to name, "Usuario" to user, "correo" to mail, "contraseña" to password))
+                alert1()
+            }else{
+                alert2()
             }
-
         }
-
-
-
     }
 
 
