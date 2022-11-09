@@ -34,8 +34,6 @@ class LoginActivity : AppCompatActivity() {
         contraseña = findViewById(R.id.editcontraseña1)
         contra = findViewById(R.id.editcontraseña2)
 
-
-
       //  val analitica = FirebaseAnalytics.getInstance(this)
       //  val paquete = Bundle()
       //  paquete.putString("messaje","integracion completa ")
@@ -48,7 +46,7 @@ class LoginActivity : AppCompatActivity() {
     val Mensajecancel={_:DialogInterface,_:Int->}
 
 
-     fun guardar(btnguardar: View) {
+    /* fun guardar(btnguardar: View) {
 
 // -------------autenticacion ok--------------------------------------
          FirebaseAuth.getInstance().createUserWithEmailAndPassword(
@@ -68,7 +66,32 @@ class LoginActivity : AppCompatActivity() {
              .create()
              .show()
 
-     }
+     }*/
+
+    fun guardar ( btnguardar : View){
+        var mail = correo!!.text.toString();
+        var password = contraseña!!.text.toString();
+        var name = nombre!!.text.toString();
+        var user = ususario!!.text.toString();
+
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(mail,password).addOnCompleteListener {
+            if(it.isSuccessful){
+                FirebaseFirestore.getInstance().collection("usuario").document(mail).set(
+                    hashMapOf("nombre" to name, "Usuario" to user, "correo" to mail, "contraseña" to password)
+                )
+                val dialog = AlertDialog.Builder(this)
+                    .setTitle(resources.getString(R.string.welcome))
+                    .setMessage(name)
+                    .setPositiveButton("Ok", logeo)
+                    .create()
+                    .show()
+            }
+
+        }
+
+
+
+    }
 
 
 }
