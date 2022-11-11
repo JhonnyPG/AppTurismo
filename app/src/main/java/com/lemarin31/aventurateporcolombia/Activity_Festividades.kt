@@ -14,5 +14,13 @@ class Activity_Festividades : Fragment() {
         super.onCreate(savedInstanceState)
 
     }
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val fragmento = inflater.inflate(R.layout.fragment_activity__festividades, container, false)
 
+        return fragmento
+    }
 }
