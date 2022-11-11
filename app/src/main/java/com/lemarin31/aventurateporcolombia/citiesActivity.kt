@@ -19,7 +19,7 @@ class citiesActivity : Fragment () {
         savedInstanceState: Bundle?
     ): View? {
         val fragmento = inflater.inflate(R.layout.activity_cities,container,false)
-        val detallesbog: Button =fragmento.findViewById(R.id.buttonBog)
+        val detallesbog: Button =fragmento.findViewById(R.id.btnBog)
         detallesbog.setOnClickListener(View.OnClickListener {
 
             activity?.supportFragmentManager?.beginTransaction()
