@@ -28,5 +28,5 @@
     <string name="tex_cam">Camara</string>
     <string name="tex_cont">Contactanos</string>
     <string name="tex_help">Ayuda</string>
-
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

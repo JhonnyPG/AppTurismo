@@ -28,12 +28,8 @@
     <string name="tex_cam">Camera</string>
     <string name="tex_cont">Contact us</string>
     <string name="tex_help">help</string>
-
-
-
-
-
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
