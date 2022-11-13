@@ -34,7 +34,11 @@ class welcomActivity : AppCompatActivity() {
         contraseña = findViewById(R.id.edtpassword)
 
 
+
+
     }
+
+
 
     val Mensajeok ={ dialog: DialogInterface,which:Int->
         val intent= Intent(this,Maindestination::class.java).apply {  }
@@ -71,7 +75,11 @@ class welcomActivity : AppCompatActivity() {
 
     val logeo ={ dialog: DialogInterface, which:Int->
         val intent= Intent(this,Maindestination::class.java).apply {  }
-        startActivity(intent)}
+        startActivity(intent)
+
+
+    }
+
 
     fun alert1 (){
         val dialog = AlertDialog.Builder(this)
@@ -80,6 +88,7 @@ class welcomActivity : AppCompatActivity() {
             .setPositiveButton("Ok", logeo)
             .create()
             .show()
+
     }
     fun alert2(){
         val dialog = AlertDialog.Builder(this)
@@ -99,7 +108,10 @@ class welcomActivity : AppCompatActivity() {
         if(edtusername!!.text.isNotEmpty() && edtpassword!!.text.isNotEmpty() ){
             FirebaseAuth.getInstance().signInWithEmailAndPassword(mail,password).addOnCompleteListener {
                 if(it.isSuccessful){
+
+
                     alert1()
+
                 }else{
                     alert2()
                 }
