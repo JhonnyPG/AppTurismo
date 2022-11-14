@@ -20,5 +20,9 @@ class MainActivity : AppCompatActivity() {
         val intent=Intent(this,LoginActivity::class.java).apply{ }
         startActivity(intent)
     }
+    fun prueba(btnprueba : View){
+        val intent= Intent(this,CiudadDetalles::class.java).apply {  }
+        startActivity(intent)
+    }
 
     }
