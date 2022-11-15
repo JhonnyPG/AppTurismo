@@ -21,6 +21,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <!--
         <activity
             android:name=".conectionfirebase"
             android:exported="false">
@@ -28,6 +29,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".Festividades"
             android:exported="false">
@@ -35,6 +37,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        -->
         <activity
             android:name=".LoginActivity"
             android:exported="false">
