@@ -29,8 +29,9 @@
     <string name="tex_cont">Contact us</string>
     <string name="tex_help">Help</string>
     <string name="tex_home">Home</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Goolge">Login by Google</string>
+    <string name="hello_blank_fragment">Adventure Through Colombia</string>
+    <string name="text_passworderror">passwords do not match</string>
 
 
 </resources>

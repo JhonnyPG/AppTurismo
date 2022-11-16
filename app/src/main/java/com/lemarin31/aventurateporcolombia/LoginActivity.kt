@@ -8,7 +8,12 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import androidx.activity.result.ActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.result.contract.ActivityResultContracts.*
 import androidx.appcompat.app.AlertDialog
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
@@ -60,14 +65,29 @@ class LoginActivity : AppCompatActivity() {
             .create()
             .show()
     }
+    fun alert3(){
+        val dialog = AlertDialog.Builder(this)
+            .setTitle("ERROR")
+            .setMessage(resources.getString(R.string.text_passworderror))
+            .setPositiveButton("Ok", null)
+            .create()
+            .show()
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    var mail = correo!!.text.toString();
+    var password = contraseña!!.text.toString();
+    var password2 = contra!!.text.toString();
+    var name = nombre!!.text.toString();
+    var user = ususario!!.text.toString();
+
+    //////////////////////////////////////////////////////////////////////////////////////////////
 
     fun guardar ( btnguardar : View){
-        var mail = correo!!.text.toString();
-        var password = contraseña!!.text.toString();
-        var name = nombre!!.text.toString();
-        var user = ususario!!.text.toString();
 
-        FirebaseAuth.getInstance().createUserWithEmailAndPassword(mail,password).addOnCompleteListener {
+        if(password==password2){
+            FirebaseAuth.getInstance().createUserWithEmailAndPassword(mail,password).addOnCompleteListener {
             if(it.isSuccessful){
                 FirebaseFirestore.getInstance().collection("usuario").document(mail).set(
                     hashMapOf("nombre" to name, "Usuario" to user, "correo" to mail, "contraseña" to password))
@@ -75,7 +95,26 @@ class LoginActivity : AppCompatActivity() {
             }else{
                 alert2()
             }
+            }
+        }else{
+            alert3()
         }
+    }
+
+    fun logeogoogle (logeoguardar: View){
+
+             val googleconfi = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                 .requestIdToken(getString(R.string.default_web_client_id)).requestEmail()
+                 .build()
+             val googlecliente = GoogleSignIn.getClient(this,googleconfi)
+
+             val google = registerForActivityResult(StartActivityForResult()){ ActivityResult ->
+                 googlecliente.signInIntent
+
+             }
+
+
+
     }
 
 

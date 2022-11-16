@@ -29,5 +29,8 @@
     <string name="tex_cont">Contactanos</string>
     <string name="tex_help">Ayuda</string>
     <string name="tex_home">Inicio</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Goolge">Acceder con Google</string>
+    <string name="hello_blank_fragment">Aventura por Colombia</string>
+    <string name="text_passworderror">Contraseñas no coinciden </string>
+
 </resources>
