@@ -59,7 +59,7 @@ class Maindestination : AppCompatActivity() {
         val navHostFragment=supportFragmentManager.findFragmentById(R.id.cities)as NavHostFragment
         val navController=navHostFragment.navController
 
-        appBarConfiguration=AppBarConfiguration(setOf(R.id.nav_cam,R.id.nav_contact,R.id.nav_help),drawerLayout)
+        appBarConfiguration=AppBarConfiguration(setOf(R.id.nav_home,R.id.nav_cam,R.id.nav_contact,R.id.nav_help),drawerLayout)
 
         setupActionBarWithNavController(navController,appBarConfiguration)
         NavView.setupWithNavController(navController)
