@@ -165,7 +165,7 @@ class Maindestination : AppCompatActivity() {
 
 
             result : ActivityResult ->
-        if(result.resultCode == Activity.RESULT_OK){
+        if(result.resultCode == RESULT_OK){
             val userid = FirebaseAuth.getInstance()
 
 

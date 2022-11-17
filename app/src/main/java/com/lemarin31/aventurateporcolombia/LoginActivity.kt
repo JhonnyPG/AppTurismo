@@ -76,16 +76,16 @@ class LoginActivity : AppCompatActivity() {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
-    var mail = correo!!.text.toString();
-    var password = contraseña!!.text.toString();
-    var password2 = contra!!.text.toString();
-    var name = nombre!!.text.toString();
-    var user = ususario!!.text.toString();
+
 
     //////////////////////////////////////////////////////////////////////////////////////////////
 
     fun guardar ( btnguardar : View){
-
+        var mail = correo!!.text.toString();
+        var password = contraseña!!.text.toString();
+        var password2 = contra!!.text.toString();
+        var name = nombre!!.text.toString();
+        var user = ususario!!.text.toString();
         if(password==password2){
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(mail,password).addOnCompleteListener {
             if(it.isSuccessful){
