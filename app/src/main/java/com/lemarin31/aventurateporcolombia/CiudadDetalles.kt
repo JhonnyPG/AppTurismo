@@ -10,25 +10,24 @@ class CiudadDetalles : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ciudad_detalles)
+
         binding = ActivityCiudadDetallesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         val db: FirebaseFirestore = FirebaseFirestore.getInstance()//obtine una instancia
 
-        binding.imgciudad.setOnClickListener {
-            var datos = ""
-            db.collection("Ciudades")
-                .get()//obtener todos los datos
-                .addOnSuccessListener { resultado ->
-                    for (documento in resultado) {
-                        datos += "${documento.id}:${documento.data}\n"
-                    }
-                    binding.txtFestividades.text = datos
-                }
-                .addOnFailureListener { exception ->
-                    binding.txtGatronomia.text = "no se ha podido conetar"
+        binding.detalles.setOnClickListener{
+            val ciudad=binding.txtnombre.text.toString()
+            db.collection("Bogota")
+                .document(ciudad)
+                .get()
+                .addOnSuccessListener{
+                    binding.txtFestividades.setText(it.get("Festividades") as String?)// IT ES EL DOCUMENTO POR DEFECTO
+                    binding.txtGatronomia.setText(it.get("Gastronomia") as String?)
+                    binding.txtHistoria.setText(it.get("Historia") as String?)
                 }
         }
+
     }
 }
