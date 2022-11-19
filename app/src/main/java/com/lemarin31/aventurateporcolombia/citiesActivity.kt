@@ -1,5 +1,6 @@
 package com.lemarin31.aventurateporcolombia
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,45 +26,29 @@ class citiesActivity : Fragment () {
         val detallecartagena: Button = fragmento.findViewById(R.id.buttonCarta)
 
         detallebog.setOnClickListener(View.OnClickListener {
-
-            activity?.supportFragmentManager?.beginTransaction()
-                ?.setReorderingAllowed(true)
-                ?.replace(R.id.cities, Activity_Festividades::class.java, null, "festividades")
-                ?.addToBackStack("")
-                ?.commit()
-
-
+            val intent = Intent(activity, DetallesBogota::class.java)
+            startActivity(intent)
         })
         detallemedellin.setOnClickListener(View.OnClickListener {
-
-            activity?.supportFragmentManager?.beginTransaction()
-                ?.setReorderingAllowed(true)
-                ?.replace(R.id.cities, Activity_Festividades::class.java, null, "festividades")
-                ?.addToBackStack("")
-                ?.commit()
-
-
+            val intent = Intent(activity, DetallesMedellin::class.java)
+            startActivity(intent)
         })
         detallecali.setOnClickListener(View.OnClickListener {
-
-            activity?.supportFragmentManager?.beginTransaction()
-                ?.setReorderingAllowed(true)
-                ?.replace(R.id.cities, Activity_Festividades::class.java, null, "festividades")
-                ?.addToBackStack("")
-                ?.commit()
-
-
+            val intent = Intent(activity, DetallesCali::class.java)
+            startActivity(intent)
         })
+
         detallecartagena.setOnClickListener(View.OnClickListener {
-
-            activity?.supportFragmentManager?.beginTransaction()
-                ?.setReorderingAllowed(true)
-                ?.replace(R.id.cities, Activity_Festividades::class.java, null, "festividades")
-                ?.addToBackStack("")
-                ?.commit()
-
-
+            val intent = Intent(activity, DetallesCartagena::class.java)
+            startActivity(intent)
         })
+
+
+
+
         return fragmento
     }
+
 }
+
+
