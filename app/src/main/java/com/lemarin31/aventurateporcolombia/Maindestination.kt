@@ -46,89 +46,100 @@ class Maindestination : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_destination)
 
-        if (savedInstanceState==null){
+        /* if (savedInstanceState==null){
             supportFragmentManager.beginTransaction()
                 .setReorderingAllowed(true)
                 .add(R.id.cities,citiesActivity::class.java,null,"nada")
                 .commit()
+        }*/
+
+
+            setSupportActionBar(findViewById(R.id.my_barradestinos))
+
+
+            val drawerLayout: DrawerLayout = findViewById(R.id.drawerlayout)
+            val NavView: NavigationView = findViewById(R.id.nav_view)
+
+            val navHostFragment =
+                supportFragmentManager.findFragmentById(R.id.cities) as NavHostFragment
+            val navController = navHostFragment.navController
+
+            appBarConfiguration = AppBarConfiguration(
+                setOf(
+                    R.id.nav_home,
+                    R.id.nav_cam,
+                    R.id.nav_contact,
+                    R.id.nav_help
+                ), drawerLayout
+            )
+
+            setupActionBarWithNavController(navController, appBarConfiguration)
+            NavView.setupWithNavController(navController)
+
         }
 
-        setSupportActionBar(findViewById(R.id.my_barradestinos))
+        override fun onSupportNavigateUp(): Boolean {
+            val navHostFragment =
+                supportFragmentManager.findFragmentById(R.id.cities) as NavHostFragment
+            val navController = navHostFragment.navController
+
+            return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+
+        }
+
+        override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+            menuInflater.inflate(R.menu.menu_destinos, menu)
+            usuario()
+            return super.onCreateOptionsMenu(menu)
+        }
+
+        fun usuario() {
+            //username desde fire
+            val intentobj: Intent = intent
 
 
-        val drawerLayout:DrawerLayout=findViewById(R.id.drawerlayout)
-        val NavView:NavigationView=findViewById(R.id.nav_view)
-
-        val navHostFragment=supportFragmentManager.findFragmentById(R.id.cities)as NavHostFragment
-        val navController=navHostFragment.navController
-
-        appBarConfiguration=AppBarConfiguration(setOf(R.id.nav_home,R.id.nav_cam,R.id.nav_contact,R.id.nav_help),drawerLayout)
-
-        setupActionBarWithNavController(navController,appBarConfiguration)
-        NavView.setupWithNavController(navController)
+            val textv = findViewById<TextView>(R.id.nav_textview)
 
 
-    }
+            val userid = FirebaseAuth.getInstance()
+            val db = FirebaseFirestore.getInstance()
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navHostFragment=supportFragmentManager.findFragmentById(R.id.cities)as NavHostFragment
-        val navController=navHostFragment.navController
+            val usuario = userid.currentUser!!.email.toString()
 
-        return navController.navigateUp(appBarConfiguration)||super.onSupportNavigateUp()
+            val docRef = db.collection("usuario").document(usuario)
+            docRef.get()
+                .addOnSuccessListener { document ->
+                    if (document != null) {
+                        val usert: String? = document.getString("Usuario")
+                        textv.setText(usert)
 
-    }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_destinos,menu)
-        usuario()
-        return super.onCreateOptionsMenu(menu)
-    }
+                        var storageref = FirebaseStorage.getInstance().reference
+                        val profileimg = findViewById<ImageView>(R.id.nav_image)
 
-    fun usuario (){
-        //username desde fire
-        val intentobj : Intent = intent
+                        val uri = storageref.child("/perfil/$usuario.jpg")
+                        val ONE_MEGABYTE = File.createTempFile(usuario, "jpg")
+                        val imgstore =
+                            FirebaseStorage.getInstance().getReference("/perfil/$usuario.jpg")
 
+                        imgstore.getFile(ONE_MEGABYTE).addOnSuccessListener {
+                            Glide.with(this)
+                                .load(ONE_MEGABYTE)
+                                .into(profileimg)
+                        }.addOnFailureListener {
+                            Toast.makeText(this, "Sin datos", Toast.LENGTH_LONG).show()
 
-        val textv = findViewById<TextView>(R.id.nav_textview)
+                        }
 
-
-        val userid = FirebaseAuth.getInstance()
-        val db = FirebaseFirestore.getInstance()
-
-        val usuario =  userid.currentUser!!.email.toString()
-
-        val docRef = db.collection("usuario").document(usuario)
-        docRef.get()
-            .addOnSuccessListener { document ->
-                if (document != null) {
-                    val usert: String? = document.getString("Usuario")
-                    textv.setText(usert)
-
-                    var storageref = FirebaseStorage.getInstance().reference
-                    val profileimg = findViewById<ImageView>(R.id.nav_image)
-
-                    val uri = storageref.child("/perfil/$usuario.jpg")
-                    val ONE_MEGABYTE = File.createTempFile(usuario,"jpg")
-                    val imgstore = FirebaseStorage.getInstance().getReference("/perfil/$usuario.jpg")
-
-                    imgstore.getFile(ONE_MEGABYTE).addOnSuccessListener {
-                        Glide.with(this)
-                            .load(ONE_MEGABYTE)
-                            .into(profileimg)
-                    }.addOnFailureListener{
+                    } else {
                         Toast.makeText(this, "Sin datos", Toast.LENGTH_LONG).show()
-
                     }
-
-                } else {
-                    Toast.makeText(this, "Sin datos", Toast.LENGTH_LONG).show()
                 }
-            }
-            .addOnFailureListener { exception ->
-                Toast.makeText(this, "Message error: $exception", Toast.LENGTH_LONG).show()
-            }
+                .addOnFailureListener { exception ->
+                    Toast.makeText(this, "Message error: $exception", Toast.LENGTH_LONG).show()
+                }
 
 
-        /* profileimg.setOnClickListener{
+            /* profileimg.setOnClickListener{
              intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
              intent.setType("image/*")
              startActivityForResult(intent, pickImage)
@@ -138,46 +149,48 @@ class Maindestination : AppCompatActivity() {
 
          */
 
-        //capturar imagen desde camara
-        val profileimg = findViewById<ImageView>(R.id.nav_image)
-        profileimg.setOnClickListener {
-            startForResult.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
-        }
-
-    }
-    private val startForResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
-
-            result : ActivityResult ->
-        if(result.resultCode == RESULT_OK){
-            val userid = FirebaseAuth.getInstance()
-
-
-            val usuario =  userid.currentUser!!.email.toString()
-            val imgstore = FirebaseStorage.getInstance().getReference("/perfil/$usuario.jpg")
-
-            val intent = result.data
-
-
-            val imagebitmap = intent?.extras?.get("data") as Bitmap
-            val baos = ByteArrayOutputStream()
-            imagebitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos)
-            val datos = baos.toByteArray()
+            //capturar imagen desde camara
             val profileimg = findViewById<ImageView>(R.id.nav_image)
-            profileimg.setImageBitmap(imagebitmap)
-            imgstore.putBytes(datos)
+            profileimg.setOnClickListener {
+                startForResult.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
+            }
+
+        }
+
+        private val startForResult =
+            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+
+                    result: ActivityResult ->
+                if (result.resultCode == RESULT_OK) {
+                    val userid = FirebaseAuth.getInstance()
+
+
+                    val usuario = userid.currentUser!!.email.toString()
+                    val imgstore =
+                        FirebaseStorage.getInstance().getReference("/perfil/$usuario.jpg")
+
+                    val intent = result.data
+
+
+                    val imagebitmap = intent?.extras?.get("data") as Bitmap
+                    val baos = ByteArrayOutputStream()
+                    imagebitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos)
+                    val datos = baos.toByteArray()
+                    val profileimg = findViewById<ImageView>(R.id.nav_image)
+                    profileimg.setImageBitmap(imagebitmap)
+                    imgstore.putBytes(datos)
+
+                }
+
+            }
+
+
+        fun basedatos(btnlogin: View) {
+            supportFragmentManager.beginTransaction()
+                .setReorderingAllowed(true)
+                .add(R.id.cities, citiesActivity::class.java, null, "cities")
+                .commit()
 
         }
 
     }
-
-
-    fun basedatos(btnlogin : View){
-        supportFragmentManager.beginTransaction()
-            .setReorderingAllowed(true)
-            .add(R.id.cities,citiesActivity::class.java,null,"cities")
-            .commit()
-
-    }
-
-
-}
