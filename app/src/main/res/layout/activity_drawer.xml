@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="30dp"
-        android:backgroundTint="#F65050"
+        android:backgroundTint="#2BED15"
         android:onClick="basedatos"
         android:src="@android:drawable/ic_menu_search"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />

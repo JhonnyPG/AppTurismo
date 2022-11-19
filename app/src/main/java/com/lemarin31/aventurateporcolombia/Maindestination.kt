@@ -40,15 +40,18 @@ class Maindestination : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private var imgpath: Uri? = null
 
-
     private val pickImage = 1
-
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_destination)
+
+        if (savedInstanceState==null){
+            supportFragmentManager.beginTransaction()
+                .setReorderingAllowed(true)
+                .add(R.id.cities,citiesActivity::class.java,null,"nada")
+                .commit()
+        }
 
         setSupportActionBar(findViewById(R.id.my_barradestinos))
 
@@ -65,17 +68,6 @@ class Maindestination : AppCompatActivity() {
         NavView.setupWithNavController(navController)
 
 
-
-
-
-
-
-
-
-
-
-
-
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -83,6 +75,7 @@ class Maindestination : AppCompatActivity() {
         val navController=navHostFragment.navController
 
         return navController.navigateUp(appBarConfiguration)||super.onSupportNavigateUp()
+
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_destinos,menu)
@@ -96,7 +89,6 @@ class Maindestination : AppCompatActivity() {
 
 
         val textv = findViewById<TextView>(R.id.nav_textview)
-
 
 
         val userid = FirebaseAuth.getInstance()
@@ -127,10 +119,6 @@ class Maindestination : AppCompatActivity() {
 
                     }
 
-
-
-
-
                 } else {
                     Toast.makeText(this, "Sin datos", Toast.LENGTH_LONG).show()
                 }
@@ -156,13 +144,8 @@ class Maindestination : AppCompatActivity() {
             startForResult.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
         }
 
-
-
-
     }
     private val startForResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
-
-
 
             result : ActivityResult ->
         if(result.resultCode == RESULT_OK){
@@ -183,10 +166,6 @@ class Maindestination : AppCompatActivity() {
             profileimg.setImageBitmap(imagebitmap)
             imgstore.putBytes(datos)
 
-
-
-
-
         }
 
     }
@@ -199,4 +178,6 @@ class Maindestination : AppCompatActivity() {
             .commit()
 
     }
+
+
 }
