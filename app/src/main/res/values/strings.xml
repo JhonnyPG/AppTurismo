@@ -26,12 +26,14 @@
     <string name="tex_gastronomy">Gastronomy</string>
     <string name="tex_parties">Parties</string>
     <string name="tex_cam">Camera</string>
-    <string name="tex_cont">Contact us</string>
+    <string name="tex_cont">Developers</string>
     <string name="tex_help">Help</string>
     <string name="tex_home">Home</string>
     <string name="Goolge">Login by Google</string>
     <string name="hello_blank_fragment">Adventure Through Colombia</string>
     <string name="text_passworderror">passwords do not match</string>
+    <string name="help">Welcome to Aventura por Colombia if you need help regarding the app</string>
+    <string name="help2">you can communicate freely with any of the developers and let us know your difficulties</string>
 
 
 </resources>

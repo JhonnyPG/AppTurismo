@@ -1,13 +1,507 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/tex_cont"
-        android:textSize="40dp" />
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tex_cont"
+                android:textSize="40dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/logo" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="10dp"
+                            android:text="Luis Eduardo Marin Velasco"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Email "
+                                android:textSize="20dp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="opraedu@gmail.com"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/logo" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_marginLeft="10dp"
+                                android:text="Stefania Holguin"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Email "
+                                    android:textSize="20dp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="stefaniaholguin08@gmail.com"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/logo" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_marginLeft="10dp"
+                                android:text="Pablo Cesar Tapasco Tapasco"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Email "
+                                    android:textSize="20dp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="pablotapasco13@gmail.com"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/logo" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_marginLeft="10dp"
+                                android:text="Jonny Perea Gonzales"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Email "
+                                    android:textSize="20dp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="jonny.perea@outlook.com"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/logo" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_marginLeft="10dp"
+                                android:text="Veronica Montenegro"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Email "
+                                    android:textSize="20dp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="veromh.97@gmail.com"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/logo" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_marginLeft="10dp"
+                                android:text="Julio Davila"
+                                android:textSize="20dp"
+                                android:textColor="#8E8C8C"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Email "
+                                    android:textSize="20dp"
+                                    android:textColor="#8E8C8C"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="jadavila4@misena.edu.co"
+                                    android:textSize="18dp"
+                                    android:textColor="#8E8C8C"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

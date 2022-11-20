@@ -26,11 +26,12 @@
     <string name="tex_gastronomy">Gastronomia</string>
     <string name="tex_parties">Festividades</string>
     <string name="tex_cam">Camara</string>
-    <string name="tex_cont">Contactanos</string>
+    <string name="tex_cont">Desarrolladores</string>
     <string name="tex_help">Ayuda</string>
     <string name="tex_home">Inicio</string>
     <string name="Goolge">Acceder con Google</string>
     <string name="hello_blank_fragment">Aventura por Colombia</string>
     <string name="text_passworderror">Contraseñas no coinciden </string>
-
+    <string name="help">Bienvenido a Aventura por Colombia si necesitas ayuda con respecto a la app</string>
+    <string name="help2">puede comunicarse libremente con cualquiera de los desarrolladores y hacernos saber sus dificultades</string>
 </resources>
