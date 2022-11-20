@@ -103,7 +103,7 @@ class LoginActivity : AppCompatActivity() {
 
     fun logeogoogle (logeoguardar: View){
 
-             val googleconfi = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            /* val googleconfi = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                  .requestIdToken(getString(R.string.default_web_client_id)).requestEmail()
                  .build()
              val googlecliente = GoogleSignIn.getClient(this,googleconfi)
@@ -111,10 +111,7 @@ class LoginActivity : AppCompatActivity() {
              val google = registerForActivityResult(StartActivityForResult()){ ActivityResult ->
                  googlecliente.signInIntent
 
-             }
-
-
-
+             }*/
     }
 
 
