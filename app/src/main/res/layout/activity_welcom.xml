@@ -13,7 +13,7 @@
         android:id="@+id/my_barrainiciosesion"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/purple_200"
+        android:background="@color/purple_500"
         android:elevation="8dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:logo="@drawable/logo"
@@ -41,7 +41,8 @@
             android:textColor="@color/purple_500"
             android:layout_marginLeft="95dp"
             android:layout_marginTop="15dp"
-            android:layout_gravity="left"/>
+            android:layout_gravity="left"
+            android:fontFamily="@font/source_titulo"/>
 
 
         <EditText
@@ -53,7 +54,8 @@
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/style_stroke"
             android:hint="@string/tex_Email"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:fontFamily="@font/source_texto"/>
 
 
         <TextView
@@ -65,7 +67,8 @@
             android:layout_marginLeft="95dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
-            android:layout_gravity="left" />
+            android:layout_gravity="left"
+            android:fontFamily="@font/source_titulo"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -79,7 +82,8 @@
                 android:layout_gravity="center|center_vertical"
                 android:background="@drawable/style_stroke"
                 android:hint="@string/tex_YouPassword"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:fontFamily="@font/source_texto"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -91,7 +95,8 @@
             android:onClick="destino"
             android:text="@string/tex_Login"
             android:textSize="25dp"
-            app:cornerRadius="15dp" />
+            app:cornerRadius="15dp"
+            android:fontFamily="@font/source_button" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -110,7 +115,8 @@
                 android:text="Google"
                 android:textColor="@color/black"
                 android:textSize="14dp"
-                app:cornerRadius="20dp" />
+                app:cornerRadius="20dp"
+                android:fontFamily="@font/source_button"/>
 
             <Button
                 android:id="@+id/facebookbutton"
@@ -123,7 +129,8 @@
                 android:textColor="@color/white"
                 android:textSize="14dp"
                 app:cornerRadius="20dp"
-                app:icon="@drawable/com_facebook_button_icon" />
+                app:icon="@drawable/com_facebook_button_icon"
+                android:fontFamily="@font/source_button"/>
         </LinearLayout>
 
 

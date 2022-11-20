@@ -15,7 +15,8 @@
             android:layout_width="1dp"
             android:layout_height="1dp"
             android:textSize="1dp"
-            android:text="4"/>
+            android:text="4"
+            />
 
         <TextView
             android:id="@+id/txtNombre"
@@ -24,6 +25,8 @@
             android:textSize="50dp"
             android:gravity="center"
             android:text="@string/tex_cart"
+            android:textColor="@color/blue_200"
+            android:fontFamily="@font/source_titulo"
             />
     </LinearLayout>
     <LinearLayout
@@ -48,9 +51,10 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:text="Festividades"
-            android:backgroundTint="@color/blue_700"
+            android:backgroundTint="@color/purple_500"
             app:cornerRadius="8dp"
-            android:layout_margin="3dp"/>
+            android:layout_margin="3dp"
+            android:fontFamily="@font/source_button"/>
 
         <Button
             android:id="@+id/btnGatronomia"
@@ -58,8 +62,9 @@
             android:layout_height="60dp"
             android:layout_margin="3dp"
             app:cornerRadius="8dp"
-            android:backgroundTint="@color/blue_700"
-            android:text="Gastronomia" />
+            android:backgroundTint="@color/purple_500"
+            android:text="Gastronomia"
+            android:fontFamily="@font/source_button"/>
     </LinearLayout>
 
     <LinearLayout
@@ -75,7 +80,8 @@
             android:text="Historia"
             android:layout_margin="3dp"
             app:cornerRadius="8dp"
-            android:backgroundTint="@color/blue_700"/>
+            android:backgroundTint="@color/purple_500"
+            android:fontFamily="@font/source_button"/>
 
     </LinearLayout>
     <LinearLayout

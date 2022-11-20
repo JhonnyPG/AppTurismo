@@ -22,7 +22,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/tex_cont"
-                android:textSize="40dp" />
+                android:textSize="40dp"
+                android:fontFamily="@font/source_titulo"
+                android:textColor="@color/purple_500"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,7 +64,8 @@
                             android:layout_marginLeft="10dp"
                             android:text="Luis Eduardo Marin Velasco"
                             android:textSize="20dp"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/purple_500"
+                            android:fontFamily="@font/source_titulo"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -82,7 +85,8 @@
                                 android:gravity="left"
                                 android:text="Email "
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/source_texto"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -96,7 +100,8 @@
                                 android:gravity="left"
                                 android:text="opraedu@gmail.com"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/source_texto"/>
 
                         </LinearLayout>
 
@@ -140,7 +145,8 @@
                                 android:layout_marginLeft="10dp"
                                 android:text="Stefania Holguin"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/purple_500"
+                                android:fontFamily="@font/source_titulo"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -160,7 +166,8 @@
                                     android:gravity="left"
                                     android:text="Email "
                                     android:textSize="20dp"
-                                    android:textColor="@color/black"/>
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/source_texto"/>
 
                             </LinearLayout>
                             <LinearLayout
@@ -219,7 +226,8 @@
                                 android:layout_marginLeft="10dp"
                                 android:text="Pablo Cesar Tapasco Tapasco"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/purple_500"
+                                android:fontFamily="@font/source_titulo"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -239,7 +247,8 @@
                                     android:gravity="left"
                                     android:text="Email "
                                     android:textSize="20dp"
-                                    android:textColor="@color/black"/>
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/source_texto"/>
 
                             </LinearLayout>
                             <LinearLayout
@@ -297,7 +306,8 @@
                                 android:layout_marginLeft="10dp"
                                 android:text="Jonny Perea Gonzales"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/purple_500"
+                                android:fontFamily="@font/source_titulo"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -317,7 +327,8 @@
                                     android:gravity="left"
                                     android:text="Email "
                                     android:textSize="20dp"
-                                    android:textColor="@color/black"/>
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/source_texto"/>
 
                             </LinearLayout>
                             <LinearLayout
@@ -375,7 +386,8 @@
                                 android:layout_marginLeft="10dp"
                                 android:text="Veronica Montenegro"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/purple_500"
+                                android:fontFamily="@font/source_titulo"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -395,7 +407,8 @@
                                     android:gravity="left"
                                     android:text="Email "
                                     android:textSize="20dp"
-                                    android:textColor="@color/black"/>
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/source_texto"/>
 
                             </LinearLayout>
                             <LinearLayout
@@ -453,7 +466,8 @@
                                 android:layout_marginLeft="10dp"
                                 android:text="Julio Davila"
                                 android:textSize="20dp"
-                                android:textColor="#8E8C8C"/>
+                                android:textColor="#8E8C8C"
+                                android:fontFamily="@font/source_titulo"/>
 
                         </LinearLayout>
                         <LinearLayout

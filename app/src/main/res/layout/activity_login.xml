@@ -26,7 +26,8 @@
             android:layout_gravity="center"
             android:text="@string/tex_Sig"
             android:textColor="@color/white"
-            android:textSize="24dp" />
+            android:textSize="24dp"
+            android:fontFamily="@font/source_titulo"/>
 
 
     </androidx.appcompat.widget.Toolbar>
@@ -47,7 +48,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/tex_fullname"
             android:textColor="@color/purple_500"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:fontFamily="@font/source_titulo"/>
 
         <EditText
             android:id="@+id/editTextnombre"
@@ -58,7 +60,8 @@
             android:ems="10"
             android:hint="@string/tex_yourname"
             android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:fontFamily="@font/source_texto"/>
 
         <TextView
             android:id="@+id/textView2"
@@ -69,7 +72,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/tex_Username"
             android:textColor="@color/purple_500"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:fontFamily="@font/source_titulo"/>
 
         <EditText
             android:id="@+id/editTextusuario"
@@ -80,7 +84,8 @@
             android:ems="10"
             android:hint="@string/tex_Username"
             android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:fontFamily="@font/source_texto"/>
 
         <TextView
             android:id="@+id/textView3"
@@ -91,7 +96,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/tex_mail"
             android:textColor="@color/purple_500"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:fontFamily="@font/source_titulo"/>
 
         <EditText
             android:id="@+id/editTextcorreo"
@@ -102,7 +108,8 @@
             android:ems="10"
             android:hint="@string/tex_Email"
             android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:fontFamily="@font/source_texto"/>
 
         <TextView
             android:id="@+id/textView4"
@@ -113,7 +120,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/tex_Password"
             android:textColor="@color/purple_500"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:fontFamily="@font/source_titulo"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -127,7 +135,8 @@
                 android:layout_marginHorizontal="20dp"
                 android:background="@drawable/style_stroke"
                 android:hint="@string/tex_YouPassword"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:fontFamily="@font/source_texto"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -139,7 +148,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/tex_repeatpassword"
             android:textColor="@color/purple_500"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:fontFamily="@font/source_titulo"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -153,7 +163,8 @@
                 android:layout_marginHorizontal="20dp"
                 android:background="@drawable/style_stroke"
                 android:hint="@string/tex_YouPassword"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:fontFamily="@font/source_texto"/>
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
@@ -174,7 +185,8 @@
             android:text="Google"
             android:textColor="@color/black"
             android:textSize="10dp"
-            app:cornerRadius="20dp"/>
+            app:cornerRadius="20dp"
+            android:fontFamily="@font/source_button"/>
 
         <Button
             android:id="@+id/facebookbutton"
@@ -187,7 +199,8 @@
             app:cornerRadius="20dp"
             android:text="Facebook"
             android:textColor="@color/white"
-            app:icon="@drawable/com_facebook_button_icon" />
+            app:icon="@drawable/com_facebook_button_icon"
+            android:fontFamily="@font/source_button"/>
 
         <Button
             android:id="@+id/buttonlogin"
@@ -196,7 +209,8 @@
             android:onClick="guardar"
             android:text="@string/tex_Sig"
             android:textSize="12dp"
-            app:cornerRadius="20dp" />
+            app:cornerRadius="20dp"
+            android:fontFamily="@font/source_button"/>
 
     </LinearLayout>
 

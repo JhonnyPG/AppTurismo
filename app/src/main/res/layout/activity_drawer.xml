@@ -17,13 +17,17 @@
             android:id="@+id/my_barradestinos"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/purple_200"
+            android:background="@color/purple_500"
             android:elevation="8dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:logo="@drawable/logo"
             app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
-            app:title="@string/app_name"
-            app:titleTextColor="@color/white" />
+            app:titleTextColor="@color/white"
+            app:title="@string/app_name">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/cities"

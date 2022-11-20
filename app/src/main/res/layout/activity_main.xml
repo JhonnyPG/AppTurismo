@@ -37,7 +37,8 @@
             android:onClick="loginup"
             android:text="@string/tex_Sig"
             android:textSize="20dp"
-            app:cornerRadius="10dp" />
+            app:cornerRadius="10dp"
+            android:fontFamily="@font/source_button"/>
 
         <Button
             android:id="@+id/continuar"
@@ -47,7 +48,8 @@
             android:onClick="welcom"
             android:text="@string/tex_Con"
             android:textSize="15dp"
-            app:cornerRadius="10dp" />
+            app:cornerRadius="10dp"
+            android:fontFamily="@font/source_texto"/>
 
 
 

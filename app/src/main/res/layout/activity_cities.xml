@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="650dp"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="cityActivity"
     android:gravity="center">
@@ -18,7 +18,8 @@
             android:elevation="15dp"
             android:text="@string/tex_bog"
             android:textSize="30dp"
-            app:cornerRadius="10dp" />
+            app:cornerRadius="10dp"
+            android:fontFamily="@font/source_button"/>
 
         <Button
             android:id="@+id/buttonMed"
@@ -30,7 +31,8 @@
             android:onClick="basedatos"
             android:text="@string/tex_med"
             android:textSize="30dp"
-            app:cornerRadius="10dp" />
+            app:cornerRadius="10dp"
+            android:fontFamily="@font/source_button"/>
 
         <Button
             android:id="@+id/buttonCarta"
@@ -42,7 +44,8 @@
             android:onClick="basedatos"
             android:text="@string/tex_cart"
             android:textSize="30dp"
-            app:cornerRadius="10dp" />
+            app:cornerRadius="10dp"
+            android:fontFamily="@font/source_button"/>
 
         <Button
             android:id="@+id/buttonCali"
@@ -54,6 +57,7 @@
             android:onClick="basedatos"
             android:text="@string/tex_cali"
             android:textSize="30dp"
-            app:cornerRadius="10dp" />
+            app:cornerRadius="10dp"
+            android:fontFamily="@font/source_button"/>
 
 </LinearLayout>
