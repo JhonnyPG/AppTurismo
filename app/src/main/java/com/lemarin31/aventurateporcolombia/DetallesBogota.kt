@@ -28,6 +28,7 @@ class DetallesBogota : AppCompatActivity() {
                     binding.txtDetalles.setText(it.get("Festividades") as String?)// IT ES EL DOCUMENTO POR DEFECTO
 
                 }
+        }
             binding.btnGatronomia.setOnClickListener {
                 val docuid = binding.txtNumero.text.toString()
                 db.collection("Ciudades")
@@ -37,6 +38,7 @@ class DetallesBogota : AppCompatActivity() {
                         binding.txtDetalles.setText(it.get("Gastronomia") as String?)// IT ES EL DOCUMENTO POR DEFECTO
 
                     }
+            }
                 binding.btnHistoria.setOnClickListener {
                     val docuid = binding.txtNumero.text.toString()
                     db.collection("Ciudades")
@@ -47,8 +49,6 @@ class DetallesBogota : AppCompatActivity() {
 
                         }
                 }
-            }
-        }
 
         // referencia al storage
         var storageimgn = FirebaseStorage.getInstance().getReference("/Ciudades/Bogotá/A8077013-85F7-4D82-A005-4C55C520F805.png")

@@ -29,6 +29,7 @@ class DetallesMedellin : AppCompatActivity() {
                     binding.txtDetalles.setText(it.get("Festividades") as String?)// IT ES EL DOCUMENTO POR DEFECTO
 
                 }
+        }
             binding.btnGatronomia.setOnClickListener {
                 val docuid = binding.txtNumero.text.toString()
                 db.collection("Ciudades")
@@ -38,6 +39,7 @@ class DetallesMedellin : AppCompatActivity() {
                         binding.txtDetalles.setText(it.get("Gastronomia") as String?)// IT ES EL DOCUMENTO POR DEFECTO
 
                     }
+            }
                 binding.btnHistoria.setOnClickListener {
                     val docuid = binding.txtNumero.text.toString()
                     db.collection("Ciudades")
@@ -48,8 +50,7 @@ class DetallesMedellin : AppCompatActivity() {
 
                         }
                 }
-            }
-        }
+
 
         // referencia al storage
         var storageimgn = FirebaseStorage.getInstance().getReference("/Ciudades/Medellín/948D3CC3-551F-4904-9386-61A5BD4DB96D.webp")

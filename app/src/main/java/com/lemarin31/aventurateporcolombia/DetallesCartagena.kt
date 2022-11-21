@@ -29,6 +29,7 @@ class DetallesCartagena : AppCompatActivity() {
                     binding.txtDetalles.setText(it.get("Festividades") as String?)// IT ES EL DOCUMENTO POR DEFECTO
 
                 }
+        }
             binding.btnGatronomia.setOnClickListener {
                 val docuid = binding.txtNumero.text.toString()
                 db.collection("Ciudades")
@@ -38,6 +39,7 @@ class DetallesCartagena : AppCompatActivity() {
                         binding.txtDetalles.setText(it.get("Gastronomia") as String?)// IT ES EL DOCUMENTO POR DEFECTO
 
                     }
+            }
                 binding.btnHistoria.setOnClickListener {
                     val docuid = binding.txtNumero.text.toString()
                     db.collection("Ciudades")
@@ -48,8 +50,6 @@ class DetallesCartagena : AppCompatActivity() {
 
                         }
                 }
-            }
-        }
         // referencia al storage
         var storageimgn = FirebaseStorage.getInstance().getReference("/Ciudades/Cartagena/013B7D71-CD4A-496C-9F90-73F4F44F6475.jpeg")
         //creamos un archivo temporal

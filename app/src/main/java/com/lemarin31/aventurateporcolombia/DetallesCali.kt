@@ -28,6 +28,7 @@ class DetallesCali : AppCompatActivity() {
                     binding.txtDetalles.setText(it.get("Festividades") as String?)// IT ES EL DOCUMENTO POR DEFECTO
 
                 }
+        }
             binding.btnGatronomia.setOnClickListener {
                 val docuid = binding.txtNumero.text.toString()
                 db.collection("Ciudades")
@@ -37,6 +38,7 @@ class DetallesCali : AppCompatActivity() {
                         binding.txtDetalles.setText(it.get("Gastronomia") as String?)// IT ES EL DOCUMENTO POR DEFECTO
 
                     }
+            }
                 binding.btnHistoria.setOnClickListener {
                     val docuid = binding.txtNumero.text.toString()
                     db.collection("Ciudades")
@@ -47,8 +49,7 @@ class DetallesCali : AppCompatActivity() {
 
                         }
                 }
-            }
-        }
+
         // referencia al storage
         var storageimgn = FirebaseStorage.getInstance().getReference("/Ciudades/Cali/D2D0A7AF-B505-422F-B260-71B6619AE3BE.jpeg")
         //creamos un archivo temporal
