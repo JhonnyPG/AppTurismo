@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Thread.sleep(3000)
+        Thread.sleep(4000)
         splashScreen.setKeepOnScreenCondition { false }
 
 
